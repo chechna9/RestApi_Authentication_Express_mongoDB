@@ -13,14 +13,14 @@ const setGoal = (req,res)=>{
 // @desc Update goals
 // @route Put /api/goals/:id
 // @access Private
-const updateGoal = (req,res,id)=>{
-    res.status(200).json({ message: `update goal ${id}` });
+const updateGoal = (req,res)=>{
+    res.status(200).json({ message: `update goal ${req.params.id}` });
 }
 // @desc Delete goals
 // @route Delete /api/goals/:id
 // @access Private
 const deleteGoal = (req,res,id)=>{
-    res.status(200).json({ message: `delete goal ${id}` });
+    res.status(200).json({ message: `delete goal ${req.params.id}` });
 }
 
 module.exports = {

@@ -1,5 +1,4 @@
 const asyncHandler = require('express-async-handler');
-const { Logger } = require('mongodb');
 const Goal = require('../models/goalModel');
 
 // @desc Get goals
